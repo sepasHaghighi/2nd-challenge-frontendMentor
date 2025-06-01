@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype'),
+         url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #F4D04E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Figtree';
+    font-style: normal;
+}
+
+:root {
+    --background-color: #F4D04E;
+    --cardBackground-color: #ffffff;
+    --shadow-color: #000000;
+    --font-color: #000000;
+    --text-color: #6B6B6B;
+}
+
+.container {
+    background-color: var(--cardBackground-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    width: 24rem;
+
+    border-radius: 1.25rem;
+    border: 1px solid var(--shadow-color);
+    box-shadow: 0.5rem 0.5rem 0 0 var(--shadow-color);
+}
+
+.image{
+    border-radius: 0.625rem;
+    width: 100%;
+}
+.container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.75rem;
+}
+
+span.tag {
+    background-color: var(--background-color);
+    width: 5.12rem;
+    height: 1.81rem;
+    border-radius: 0.25rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.date{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 24;
+    font-weight: 800;
+}
+
+h1:hover{
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user-image{
+    border-radius: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.username{
+    font-size: 14px;
+    font-weight: 800;
+}
